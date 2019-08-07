@@ -44,11 +44,6 @@ public class DictController {
         List<Dict> fromType = diceService.find("002");
 
         System.out.println("fromType"+fromType);
-        JSONObject jo = new JSONObject();
-        jo.put("fromType", fromType);
-        String json2 = JSON.toJSONString(jo);
-        System.out.println("fromTypejosn===="+json2);
-
 
         request.setAttribute("fromType", fromType);
 
